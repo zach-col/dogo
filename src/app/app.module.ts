@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { DogsittersComponent } from './dogsitters/dogsitters.component';
 import { ProfileComponent } from './profile/profile.component';
+import { HttpClientModule } from '@angular/common/http';
 import { DogsitterinfoComponent } from './dogsitterinfo/dogsitterinfo.component';
 
 @NgModule({
@@ -20,7 +21,8 @@ import { DogsitterinfoComponent } from './dogsitterinfo/dogsitterinfo.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

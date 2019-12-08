@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService} from '../http.service'
 
 @Component({
   selector: 'app-dogsitters',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DogsittersComponent implements OnInit {
 
-  constructor() { }
+	data: string = ''
 
-  ngOnInit() {
-  }
+
+	people: Object;
+
+  	constructor(private _http: HttpService) { }
+
+	ngOnInit() {
+		this._http.getPeople().subscribe(data => {
+			this.people = data.results;
+			console.log(this.people)
+		});
+	}
+
 
 }

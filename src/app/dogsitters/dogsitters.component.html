@@ -1,1 +1,10 @@
 <p>dogsitters works!</p>
+
+<ul *ngIf="people">
+	<h1>in</h1>
+	<li *ngFor="let person of people">
+		<p class="name">{{person.user.name.first}}</p>
+		<img [src]="person.user.picture">
+		<a routerLink="/dogsitterinfo/{{ person.seed}}" class="name"> View profile</a>
+	</li>
+</ul>
