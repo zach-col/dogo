@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService} from '../http.service'
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+	data: string = ''
 
-  ngOnInit() {
-  }
+
+	person: Object;
+  	constructor(private _http: HttpService) { }
+
+	ngOnInit() {
+		this._http.randomUser().subscribe(data => {
+			this.person = data.results[Math.floor(Math.random() * 11)];
+			
+			console.log(this.person)
+		});
+	}
+
 
 }

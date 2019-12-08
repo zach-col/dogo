@@ -1,1 +1,4 @@
-<p>profile works!</p>
+<div *ngIf="person">
+	<p class="name">{{person.user.name.first}}</p>
+	<img [src]="person.user.picture">
+</div>

@@ -13,11 +13,12 @@ export class DogsittersComponent implements OnInit {
 
 	people: Object;
 
-  	constructor(private _http: HttpService) { }
+  	constructor(private _http: HttpService) {
+  	}
 
 	ngOnInit() {
 		this._http.getPeople().subscribe(data => {
-			this.people = data.results;
+			this.people = data['results'];
 			console.log(this.people)
 		});
 	}

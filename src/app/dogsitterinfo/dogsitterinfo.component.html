@@ -1,1 +1,5 @@
-<p>dogsitterinfo works! {{user.id}}</p>
+<div *ngIf="user">
+	<p class="name">{{user.user.name.first}}</p>
+	<img [src]="user.user.picture">
+		<a href="https://www.google.com/maps/search/?api=1&query={{maplink}}">Google maps</a>
+</div>
