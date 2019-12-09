@@ -9,6 +9,8 @@ import { DogsittersComponent } from './dogsitters/dogsitters.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DogsitterinfoComponent } from './dogsitterinfo/dogsitterinfo.component';
+import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { DogsitterinfoComponent } from './dogsitterinfo/dogsitterinfo.component'
     AboutComponent,
     DogsittersComponent,
     ProfileComponent,
-    DogsitterinfoComponent
+    DogsitterinfoComponent,
+    SignupComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

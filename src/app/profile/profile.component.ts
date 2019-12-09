@@ -17,7 +17,7 @@ export class ProfileComponent implements OnInit {
 	maplink: String;
 
 	// generate random number for random user
-	random: String = Math.floor(Math.random() * 11);
+	random: number = Math.floor(Math.random() * 11);
 
 
   	constructor(private _http: HttpService) { }

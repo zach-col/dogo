@@ -6,6 +6,8 @@ import { AboutComponent } from './about/about.component';
 import { DogsittersComponent } from './dogsitters/dogsitters.component';
 import { ProfileComponent } from './profile/profile.component';
 import { DogsitterinfoComponent } from './dogsitterinfo/dogsitterinfo.component';
+import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
@@ -13,7 +15,10 @@ const routes: Routes = [
 	{ path: 'about', component: AboutComponent},
 	{ path: 'dogsitters', component: DogsittersComponent},
 	{ path: 'profile', component: ProfileComponent},
-	{ path: 'dogsitterinfo/:id', component: DogsitterinfoComponent}
+	{ path: 'dogsitterinfo/:id', component: DogsitterinfoComponent},
+	{ path: 'signup', component: SignupComponent},
+	{ path: 'login', component: LoginComponent}
+
 ];
 
 @NgModule({
