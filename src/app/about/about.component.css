@@ -1,0 +1,36 @@
+#founder {
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	height: 400px;
+	margin-bottom: 30px;
+}
+
+.black {
+	color: black;
+}
+
+#founderContainer {
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+.founderInfo {
+	font-size: 25px;
+}
+
+#aboutHeader {
+	margin-top: 50px;
+}
+
+#aboutHeaderSpace {
+	margin-bottom: 50px;
+}
+
+.teamName {
+	margin-top: 30px;
+}
+
+.founderImage {
+	width: 80%;
+}

@@ -1,0 +1,51 @@
+#dogSitterImage {
+	width: 250px;
+	height: 250px;
+}
+
+#rowSpacing {
+	margin-top: 20px;
+}
+
+#dogSitterContainer {
+	margin-top: 25px;
+}
+
+.info {
+	font-size: 25px;
+}
+
+#location {
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.mainInfo {
+	font-size: 30px;
+}
+
+.margin {
+	margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.next:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.next {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.round {
+  border-radius: 50%;
+}

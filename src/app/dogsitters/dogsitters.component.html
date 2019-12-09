@@ -1,12 +1,18 @@
-<p>dogsitters works!</p>
-
 <div *ngIf="people">
-	<h1>in</h1>
-	<ul *ngFor="let person of people; index as i" >
-		<li>
-			<p class="name">{{person.user.name.first}}</p>
-			<img [src]="person.user.picture">
-			<a routerLink="/dogsitterinfo/{{i}}" class="name"> View profile</a>
-		</li>
-	</ul>
+	<div class="container">
+		<h1 class="text-center header">Find the perfect dog sitter for you.</h1>
+
+		<div class="row">
+			<div class="col-sm-12 col-md-4 col-lg-3" *ngFor="let person of people; index as i">
+				<div class="card cardBottom">
+				  <img [src]="person.user.picture" class="card-img-top">
+				  <div class="card-body text-center">
+				    <h5 class="card-title">{{person.user.name.first | titlecase}} {{person.user.name.last | titlecase}}</h5>
+				    <p class="card-text">{{person.user.location.city | titlecase}} , {{person.user.location.state | titlecase}}</p>
+				    <a routerLink="/dogsitterinfo/{{i}}" class="btn btn-primary">View profile</a>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

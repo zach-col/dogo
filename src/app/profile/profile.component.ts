@@ -10,8 +10,14 @@ export class ProfileComponent implements OnInit {
 
 	data: Object;
 
-
+	// store random person api call object
 	person: Object;
+
+	// google maps api link
+	maplink: String;
+
+	// generate random number for random user
+	random: String = Math.floor(Math.random() * 11);
 
 
   	constructor(private _http: HttpService) { }
@@ -21,11 +27,10 @@ export class ProfileComponent implements OnInit {
 
 	  		this.data = data['results']
 
-	  		this.person = this.data[Math.floor(Math.random() * 11)]
+	  		this.person = this.data[this.random]
 
 
-
-
+	  		this.maplink = encodeURI(this.data[this.random].user.location.state)
 			console.log(this.person)
 		});
 	}

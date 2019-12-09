@@ -10,7 +10,6 @@ export class DogsittersComponent implements OnInit {
 
 	data: string = ''
 
-
 	people: Object;
 
   	constructor(private _http: HttpService) {

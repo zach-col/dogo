@@ -1,4 +1,11 @@
 <div *ngIf="person">
-	<p class="name">{{person.user.name.first}}</p>
-	<img [src]="person.user.picture">
+
+	<div class="container text-center">
+		<img [src]="person.user.picture" id="userImage">
+
+		<p class="info">{{person.user.name.first | titlecase}} {{person.user.name.last | titlecase}}</p>
+		<p class="info">{{person.user.phone}}</p>
+		<p class="info">{{person.user.email}}</p>
+		<a href="https://www.google.com/maps/search/?api=1&query={{maplink}}" target="_blank">Google maps / Location</a>
+	</div>
 </div>

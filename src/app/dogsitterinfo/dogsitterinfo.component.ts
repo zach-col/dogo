@@ -9,7 +9,7 @@ import { HttpService} from '../http.service'
 })
 export class DogsitterinfoComponent implements OnInit {
   // user object
-  user: Object;
+  person: Object;
 
   test: Object;
 
@@ -29,11 +29,11 @@ export class DogsitterinfoComponent implements OnInit {
 	  	this._http.getUser().subscribe(data => {
 	  		this.data = data['results']
 
-	  		this.user = this.data[params.id]
+	  		this.person = this.data[params.id]
 
-	  		this.maplink = encodeURI(this.user.user.location.state)
+	  		this.maplink = encodeURI(this.data[params.id].user.location.state)
 
-	  		console.log("user",this.user)
+	  		console.log("user",this.person)
 	  	});
 
   	})
