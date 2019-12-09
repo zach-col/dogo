@@ -22,6 +22,10 @@
 	height: 400px;
 }
 
+#founderName {
+	margin-top: 20px;
+}
+
 #founderContainer {
 	margin-top: 70px;
 	margin-bottom: 70px;
